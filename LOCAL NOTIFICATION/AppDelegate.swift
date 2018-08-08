@@ -65,18 +65,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     // Reacts to tapping on the notifctn
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         // We have access to the notf. so we can access the identifier
+        
         if response.notification.request.identifier == "testIdentifier" {
-            print("HANDLING NOTF. WITH THE IDENTIFIER 'testIdentifier'")
-            // We can launch a specific screen from here
+                    print("HANDLING NOTF. WITH THE IDENTIFIER 'testIdentifier'")
+                    // We can launch a specific screen from here
             
-            // We also access the payload of what was sent in the push notification in here and here's some code to help us parse the notification
+                    // We also access the payload of what was sent in the push notification in here and here's some code to help us parse the notification
             if let notification = response.notification.request.content.userInfo as? [String: AnyObject] {
+                
                 let message = parseRemoteNotification(notification: notification)
+                
                 print(message as Any)
             }
             
             completionHandler()
         }
+        
+        // HERE'S ANOTHER POSSIBILITY OF WHAT COULD BE DONE INSTEAD OF WHAT'S ABOVE - THIS WOULD MAKE THE ACTION BUTTONS WORK
+        
+        // THIS WOULD HELP US TO SHOW WHICH BOXING EVENTS OR CALENDAR EVENTS HAVE HAD REMINDERS SET UP IN THE FORM OF PUSH NOTF.
+//        https://www.youtube.com/watch?v=e7cTZ4Tp25I
+//        let foodItem = Food(context: persistentContainer.viewContext)
+//        foodItem.added = NSDate()
+//
+//        if response.actionIdentifier == "addFruit" {
+//            foodItem.type = "Fruit"
+//
+//        } else { // veggie
+//
+//            foodItem.type = "Vegetable"
+//        }
+//
+//        self.saveContext()
+//        scheduleNotification() // this would be here if we were to put this func in this class instead of ViewController.swift
+//         completionHandler()
     }
     
     

@@ -13,6 +13,7 @@
 		9F6F940B211AEABC00EAB2EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6F940A211AEABC00EAB2EE /* Assets.xcassets */; };
 		9F6F940E211AEABC00EAB2EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F6F940C211AEABC00EAB2EE /* LaunchScreen.storyboard */; };
 		9F6F941C211AFFC300EAB2EE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F6F941B211AFFC300EAB2EE /* GoogleService-Info.plist */; };
+		9F6F941E211B0B7B00EAB2EE /* img.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6F941D211B0B7B00EAB2EE /* img.png */; };
 		C9B4F195496F84D99AB8DB00 /* Pods_LOCAL_NOTIFICATION.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3535F51A61EABA530E087333 /* Pods_LOCAL_NOTIFICATION.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		9F6F940F211AEABC00EAB2EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F6F9415211AEFE700EAB2EE /* LOCAL NOTIFICATION.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "LOCAL NOTIFICATION.entitlements"; sourceTree = "<group>"; };
 		9F6F941B211AFFC300EAB2EE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9F6F941D211B0B7B00EAB2EE /* img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				9F6F9403211AEABA00EAB2EE /* AppDelegate.swift */,
 				9F6F9405211AEABA00EAB2EE /* ViewController.swift */,
 				9F6F9407211AEABA00EAB2EE /* Main.storyboard */,
+				9F6F941D211B0B7B00EAB2EE /* img.png */,
 				9F6F940A211AEABC00EAB2EE /* Assets.xcassets */,
 				9F6F940C211AEABC00EAB2EE /* LaunchScreen.storyboard */,
 				9F6F941B211AFFC300EAB2EE /* GoogleService-Info.plist */,
@@ -158,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F6F941E211B0B7B00EAB2EE /* img.png in Resources */,
 				9F6F941C211AFFC300EAB2EE /* GoogleService-Info.plist in Resources */,
 				9F6F940E211AEABC00EAB2EE /* LaunchScreen.storyboard in Resources */,
 				9F6F940B211AEABC00EAB2EE /* Assets.xcassets in Resources */,
